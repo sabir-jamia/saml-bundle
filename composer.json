@@ -22,6 +22,5 @@
         }
     },
     "type": "symfony-bundle",
-    "license": "MIT",
-    "require": {}
+    "license": "MIT"
 }
