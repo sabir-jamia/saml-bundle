@@ -2,7 +2,7 @@
 
 Symfony Bundle for Single Sign On with SAML in PIMCORE
 
-  - Pimcore >= 5.4.4
+  - Pimcore == 5.4.4
    
 
 # SAML Concept!
