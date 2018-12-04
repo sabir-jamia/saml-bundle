@@ -22,5 +22,5 @@
         }
     },
     "type": "symfony-bundle",
-    "license": "MIT"
+    "license": "Apache License 2.0"
 }
