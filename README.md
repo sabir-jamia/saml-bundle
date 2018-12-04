@@ -26,5 +26,5 @@ Symfony Bundle for Single Sign On with SAML in PIMCORE
 # How It Works---
 
  - First We had override the pimcore login page and inserted our customized login page having a sso login. (outlook)
- - When user click this link, we SAMLBundle creates a SAML 2.0 request with the provided configuration using simplesaml/saml2 library and sent it to the outlook login page.
+ - When user click this link, the SAMLBundle creates a SAML 2.0 request with the provided configuration using simplesaml/saml2 library and sent it to the outlook login page.
  - If the user is already logged in, the response from the outlook is given instantly, otherwise the response is obtained by the application after a successful login in the outlook.
