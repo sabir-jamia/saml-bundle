@@ -1,0 +1,5 @@
+saml:
+    resource: "@SAMLBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

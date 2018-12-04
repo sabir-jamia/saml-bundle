@@ -1,0 +1,27 @@
+{
+    "name": "sabir-jamia/saml-bundle",
+    "description": "Symfony Bundle for Single Sign On with SAML in PIMCORE",
+    "authors": [
+       {
+            "name": "Mohammad Sabir",
+            "email": "sabir.jmi11@gmail.com"
+       },
+       {
+            "name": "Deepak Kumar",
+	    "email": "deepak.kumar2@happiestminds.com"
+       }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "pimcore/pimcore": "~5.4.0",
+        "simplesamlphp/saml2": "^3.3"
+    },
+    "autoload": {
+	"psr-4": {
+            "SAMLBundle": "src/"
+        }
+    },
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "require": {}
+}

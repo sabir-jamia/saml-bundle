@@ -1,0 +1,31 @@
+services:
+    # default configuration for services in *this* file
+    _defaults:
+        # automatically injects dependencies in your services
+        autowire: true
+        # automatically registers your services as commands, event subscribers, etc.
+        autoconfigure: true
+        # this means you cannot fetch services directly from the container via $container->get()
+        # if you need to do this, you can override this setting on individual services
+        public: false
+
+    # controllers are imported separately to make sure they're public
+    # and have a tag that allows actions to type-hint services
+    SAMLBundle\Controller\:
+        resource: '../../Controller'
+        public: true
+        tags: ['controller.service_arguments']
+    
+    saml_request_service:
+        class: SAMLBundle\Service\RequestService
+        public: true
+        arguments: ['%saml_sp_config%', '%saml_idp_config%']
+        
+    saml_response_service:
+        class: SAMLBundle\Service\ResponseService
+        public: true
+        
+    saml_container_service:
+        class: SAMLBundle\Service\ContainerService
+        public: true
+        

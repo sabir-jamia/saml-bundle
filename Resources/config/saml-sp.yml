@@ -1,0 +1,7 @@
+saml:
+    default_sp:
+        #applicationID
+        entityID: spn:<applicationID>
+        NameIDFormat: urn:oasis:names:tc:SAML:2.0:nameid-format:transient
+        replyURL: http://<website.com>/saml/sso
+        baseURLPath: /
